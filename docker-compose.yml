@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  nodeexpress-alibaba-docker-tutorial:
+    image: nodeexpress-alibaba-docker-tutorial
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000

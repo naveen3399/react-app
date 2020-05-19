@@ -24,10 +24,14 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
 <<<<<<< HEAD
+<<<<<<< HEAD
       - printf '[{"name":"react-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 =======
       - printf '[{"name":"reeact-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 >>>>>>> 8e70f172512bde9ff0344c6b3a5ede363fe015e9
+=======
+      - printf '[{"name":"react-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+>>>>>>> 11e3248ae18e9fc3db592e25e28bf0e85f646e4c
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
